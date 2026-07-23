@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<!-- saved from url=(0148)file:///C:/Users/msale/AppData/Local/Temp/claude/F-%2DTrabajo-Estudio-SAB-Skills/85e5584e-60c3-47b7-a86a-96cde420a7f2/scratchpad/landing_sofire.html -->
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sofire_art_ | Tatuajes Minimalistas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="./sofire_art_ _ Tatuajes Minimalistas_files/css2" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --color-bg: #ffffff;
+            --color-text: #1a1a1a;
+            --color-text-secondary: #767676;
+            --color-border: #e8e8e8;
+            --color-accent-bg: #f8f8f8;
+            --color-hover: #f0f0f0;
+
+            --font-display: "Futura PT", sans-serif;
+            --font-body: "Futura PT", sans-serif;
+
+            --size-xs: 0.75rem;
+            --size-sm: 0.875rem;
+            --size-base: 1rem;
+            --size-lg: 1.25rem;
+            --size-xl: 1.5rem;
+            --size-2xl: 2rem;
+            --size-3xl: 2.5rem;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --color-bg: #0f0f0f;
+                --color-text: #f5f5f5;
+                --color-text-secondary: #a0a0a0;
+                --color-border: #2a2a2a;
+                --color-accent-bg: #1a1a1a;
+                --color-hover: #242424;
+            }
+        }
+
+        body {
+            background-color: var(--color-bg);
+            color: var(--color-text);
+            font-family: var(--font-body);
+            font-size: var(--size-base);
+            font-weight: 400;
+            line-height: 1.6;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .container {
+            max-width: 480px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            margin-bottom: 2.5rem;
+            padding: 2rem 0;
+            border-bottom: 1px solid var(--color-border);
+            position: relative;
+            background-color: #000000;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('hero-bg-compressed.jpg');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.60;
+            z-index: 0;
+        }
+
+        .hero-brand,
+        .hero-subtitle {
+            position: relative;
+            z-index: 1;
+            color: #ffffff;
+        }
+
+        .hero-brand {
+            font-family: var(--font-display);
+            font-size: var(--size-3xl);
+            font-weight: 400;
+            letter-spacing: 0.3em;
+            line-height: 1.8;
+            margin-bottom: 0.5rem;
+            text-wrap: balance;
+            text-transform: uppercase;
+        }
+
+        .hero-subtitle {
+            font-size: var(--size-sm);
+            color: var(--color-text-secondary);
+            font-weight: 400;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+
+        /* CTA Principal */
+        .cta-section {
+            margin-bottom: 2.5rem;
+            padding: 1.5rem;
+            background-color: var(--color-accent-bg);
+            border: 1px solid var(--color-border);
+        }
+
+        .cta-title {
+            font-size: var(--size-sm);
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            color: var(--color-text-secondary);
+            margin-bottom: 1rem;
+            font-weight: 500;
+        }
+
+        .cta-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 1rem;
+            border: 1px solid var(--color-text);
+            background-color: transparent;
+            color: var(--color-text);
+            text-decoration: none;
+            text-align: center;
+            font-size: var(--size-base);
+            font-family: var(--font-sans);
+            cursor: pointer;
+            transition: all 0.2s;
+            border-radius: 0;
+        }
+
+        .btn:hover,
+        .btn:focus {
+            background-color: var(--color-text);
+            color: var(--color-bg);
+            outline: none;
+        }
+
+        .btn-secondary {
+            border-color: var(--color-text-secondary);
+            color: var(--color-text-secondary);
+        }
+
+        .btn-secondary:hover {
+            background-color: var(--color-text-secondary);
+            color: var(--color-bg);
+        }
+
+        /* Sections Grid */
+        .sections {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .section-card {
+            padding: 1.5rem;
+            border: 1px solid var(--color-border);
+            background-color: var(--color-accent-bg);
+            text-decoration: none;
+            color: var(--color-text);
+            transition: all 0.2s;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 140px;
+        }
+
+        .section-card:hover {
+            border-color: var(--color-text);
+            background-color: var(--color-hover);
+        }
+
+        .section-card--image {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .section-card--image::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('tatuajes%20landing.jpeg');
+            background-size: 130%;
+            background-position: center;
+            opacity: 0.5;
+            z-index: 0;
+        }
+
+        .section-card--image > div {
+            position: relative;
+            z-index: 1;
+        }
+
+        .section-card--image-ilustracion::before {
+            background-image: url('Ilustracion%20landing.jpeg');
+        }
+
+        .section-card--portafolio::before {
+            background-image: url('Portafolio%20landing.jpeg');
+        }
+
+        .section-card--instagram::before {
+            background-image: url('Instagram%20landing.jpg');
+        }
+
+        .section-card-title {
+            font-family: var(--font-display);
+            font-size: var(--size-lg);
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            text-wrap: balance;
+        }
+
+        .section-card-label {
+            font-size: var(--size-xs);
+            color: var(--color-text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        /* Full Width Sections */
+        .section-full {
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            border: 1px solid var(--color-border);
+            background-color: var(--color-accent-bg);
+        }
+
+        .section-full-title {
+            font-family: var(--font-display);
+            font-size: var(--size-lg);
+            font-weight: 700;
+            margin-bottom: 1rem;
+            text-wrap: balance;
+        }
+
+        .section-full-content {
+            font-size: var(--size-sm);
+            line-height: 1.8;
+            color: var(--color-text-secondary);
+            margin-bottom: 1rem;
+        }
+
+        .section-full-content p {
+            margin-bottom: 0.75rem;
+        }
+
+        .section-full-content strong {
+            color: var(--color-text);
+            font-weight: 600;
+        }
+
+        /* FAQ */
+        .faq-item {
+            padding: 1rem 0;
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .faq-question {
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: var(--color-text);
+        }
+
+        .faq-answer {
+            font-size: var(--size-sm);
+            color: var(--color-text-secondary);
+            line-height: 1.8;
+        }
+
+        /* Accordion */
+        details {
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            border: 1px solid var(--color-border);
+            background-color: var(--color-accent-bg);
+        }
+
+        summary {
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        summary::after {
+            content: '▼';
+            display: inline-block;
+            transition: transform 0.3s;
+            margin-left: 1rem;
+            flex-shrink: 0;
+        }
+
+        details[open] summary::after {
+            transform: rotate(180deg);
+        }
+
+        details[open] summary {
+            margin-bottom: 1rem;
+        }
+
+        .accordion-content {
+            font-size: var(--size-sm);
+            line-height: 1.8;
+            color: var(--color-text-secondary);
+        }
+
+        .accordion-content p {
+            margin-bottom: 0.75rem;
+        }
+
+        .accordion-content strong {
+            color: var(--color-text);
+            font-weight: 600;
+        }
+
+        /* About Section */
+        .about {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid var(--color-border);
+            color: var(--color-text-secondary);
+            font-size: var(--size-sm);
+            line-height: 1.8;
+        }
+
+        .about-name {
+            font-family: var(--font-display);
+            font-size: var(--size-lg);
+            color: var(--color-text);
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+
+        /* Divider */
+        .divider {
+            height: 1px;
+            background-color: var(--color-border);
+            margin: 2rem 0;
+        }
+
+        /* Line accent - evokes linework */
+        .line-accent {
+            width: 40px;
+            height: 1px;
+            background-color: var(--color-text);
+            margin: 1.5rem auto;
+        }
+
+        /* Focus states */
+        a:focus,
+        button:focus {
+            outline: 2px solid var(--color-text);
+            outline-offset: 2px;
+        }
+
+        /* Reduced motion */
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Hero -->
+        <section class="hero">
+            <h1 class="hero-brand">sofire art</h1>
+            <p class="hero-subtitle">Tatuajes, Ilustración y Diseño</p>
+        </section>
+
+
+        <!-- CTA Principal -->
+        <section class="cta-section">
+            <p class="cta-title">Agenda tu tatuaje</p>
+            <div class="cta-buttons">
+                <a href="https://ig.me/m/sofire_art_/?text=Hola%20Sofia%2C%20me%20gustaria%20cotizar%20un%20tatuaje" class="btn">Escribir por Instagram</a>
+                <a href="https://wa.me/56936712532?text=Hola%20Sofia%2C%20me%20gustaria%20cotizar%20un%20tatuaje" class="btn btn-secondary">Escribir por WhatsApp</a>
+            </div>
+        </section>
+
+        <!-- Main Sections Grid -->
+        <div class="sections">
+            <a href="https://sofiaalessandri.myportfolio.com/" class="section-card section-card--image section-card--portafolio">
+                <div>
+                    <h2 class="section-card-title">Portafolio</h2>
+                    <p class="section-card-label">Ver trabajos</p>
+                </div>
+            </a>
+
+            <a href="https://www.instagram.com/sofire_art_/" class="section-card section-card--image section-card--instagram">
+                <div>
+                    <h2 class="section-card-title">Instagram</h2>
+                    <p class="section-card-label">@sofire_art_</p>
+                </div>
+            </a>
+
+            <a href="https://sofiaalessandri.myportfolio.com/tatuajes" class="section-card section-card--image">
+                <div>
+                    <h2 class="section-card-title">Tatuajes</h2>
+                    <p class="section-card-label">Fine Line</p>
+                </div>
+            </a>
+
+            <a href="https://sofiaalessandri.myportfolio.com/ilustraciones" class="section-card section-card--image section-card--image-ilustracion">
+                <div>
+                    <h2 class="section-card-title">Ilustración</h2>
+                    <p class="section-card-label">Custom design</p>
+                </div>
+            </a>
+        </div>
+
+        <!-- Cuidados -->
+        <details>
+            <summary>
+                <div>
+                    <p style="font-family: var(--font-display); font-size: var(--size-lg); font-weight: 700; margin-bottom: 0.5rem;">Cuidados del Tatuaje</p>
+                    <p class="section-card-label">Si ya pagaste, cuidalo para que dure</p>
+                </div>
+            </summary>
+            <div class="accordion-content">
+                <p>✓ Mantén el parche durante 3 días, idealmente. Retíralo suavemente bajo la ducha.</p>
+                <p>✓ Durante la primera semana, lava el tatuaje 3 veces al día con agua tibia y jabón neutro.</p>
+                <p>✓ Seca con pequeños toques usando papel absorbente limpio.</p>
+                <p>✓ Aplica una capa delgada de crema cicatrizante 3 veces al día durante 2 semanas.</p>
+                <p>✓ Durante los primeros 3 días, evita deporte, alcohol y exposición al sol.</p>
+                <p>✓ Durante 10 días, evita piscina, mar, jacuzzi y baños prolongados.</p>
+                <p>✓ No rasques ni retires costras o piel suelta.</p>
+                <p>✓ Una vez cicatrizado, usa bloqueador solar permanentemente.</p>
+            </div>
+        </details>
+
+        <!-- FAQ -->
+        <details>
+            <summary>
+                <div>
+                    <p style="font-family: var(--font-display); font-size: var(--size-lg); font-weight: 700; margin-bottom: 0.5rem;">Preguntas Frecuentes</p>
+                    <p class="section-card-label">No hay preguntas tontas</p>
+                </div>
+            </summary>
+            <div class="accordion-content">
+                <div class="faq-item">
+                    <p class="faq-question">¿Cuánto dura una sesión?</p>
+                    <p class="faq-answer">Depende del tamaño y complejidad del diseño. Generalmente entre 1 a 3 horas.</p>
+                </div>
+                <div class="faq-item">
+                    <p class="faq-question">¿Duele hacer un tatuaje?</p>
+                    <p class="faq-answer">Sí, pero el nivel de dolor es relativo. La zona y el tamaño influyen. Muchas personas lo describen como incómodo más que doloroso.</p>
+                </div>
+                <div class="faq-item">
+                    <p class="faq-question">¿Necesito agendar con anticipación?</p>
+                    <p class="faq-answer">Sí, escribeme por Instagram o WhatsApp para consultar disponibilidad y coordinar tu cita.</p>
+                </div>
+                <div class="faq-item">
+                    <p class="faq-question">¿Puedo llevar mi propio diseño?</p>
+                    <p class="faq-answer">Claro. También ofrezco crear diseños personalizados según tus ideas y preferencias.</p>
+                </div>
+                <div class="faq-item">
+                    <p class="faq-question">¿Puedo hacer deporte despues de tatuarme?</p>
+                    <p class="faq-answer">Lo ideal es evitar la actividad física y sudar por al menos 3 días.</p>
+                </div>
+                <div class="faq-item">
+                    <p class="faq-question">¿Cuanto cuesta tatuarme?</p>
+                    <p class="faq-answer">Va a depender de la dificultad y tamaño del tatuaje, pero en general los precios van desde los 45.000 pesos.</p>
+                </div>
+            </div>
+        </details>
+
+        <!-- About -->
+        <section class="about">
+            <h2 class="about-name">Sofía Alessandri</h2>
+            <p>Artista visual especializada en tatuajes minimalistas, botánicos y linework en tinta negra. Cada diseño es único y pensado especialmente para ti.</p>
+            <p style="margin-top: 1rem; font-size: var(--size-xs);">Santiago de Chile</p>
+        </section>
+    </div>
+
+</body></html>
